@@ -44,7 +44,9 @@
 int main(void)
 {
     // set for 16 MHz clock
-    CPU_PRESCALE(0);
+    // CPU_PRESCALE(0);
+    // set for 8 MHz clock
+    CPU_PRESCALE(0x01)
 
     keyboard_setup();
 

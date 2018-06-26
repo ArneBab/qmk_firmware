@@ -32,7 +32,10 @@ MCU = atmega32u4
 #     does not *change* the processor frequency - it should merely be updated to
 #     reflect the processor speed set externally so that the code can use accurate
 #     software delays.
-F_CPU = 16000000
+# F_CPU = 16000000
+#     in lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.h the only
+#     supported values for F_USB are 16000000 and 8000000.
+F_CPU = 8000000
 
 
 #
